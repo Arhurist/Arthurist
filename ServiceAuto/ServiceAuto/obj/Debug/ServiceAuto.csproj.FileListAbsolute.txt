@@ -1,0 +1,15 @@
+C:\Exam\ServiceAuto\ServiceAuto\bin\Debug\ServiceAuto.exe.config
+C:\Exam\ServiceAuto\ServiceAuto\bin\Debug\ServiceAuto.exe
+C:\Exam\ServiceAuto\ServiceAuto\bin\Debug\ServiceAuto.pdb
+C:\Exam\ServiceAuto\ServiceAuto\obj\Debug\ServiceAuto.csprojAssemblyReference.cache
+C:\Exam\ServiceAuto\ServiceAuto\obj\Debug\Views\Windows\MainWindow.g.cs
+C:\Exam\ServiceAuto\ServiceAuto\obj\Debug\App.g.cs
+C:\Exam\ServiceAuto\ServiceAuto\obj\Debug\ServiceAuto_MarkupCompile.cache
+C:\Exam\ServiceAuto\ServiceAuto\obj\Debug\ServiceAuto_MarkupCompile.lref
+C:\Exam\ServiceAuto\ServiceAuto\obj\Debug\Views\Windows\MainWindow.baml
+C:\Exam\ServiceAuto\ServiceAuto\obj\Debug\ServiceAuto.g.resources
+C:\Exam\ServiceAuto\ServiceAuto\obj\Debug\ServiceAuto.Properties.Resources.resources
+C:\Exam\ServiceAuto\ServiceAuto\obj\Debug\ServiceAuto.csproj.GenerateResource.cache
+C:\Exam\ServiceAuto\ServiceAuto\obj\Debug\ServiceAuto.csproj.CoreCompileInputs.cache
+C:\Exam\ServiceAuto\ServiceAuto\obj\Debug\ServiceAuto.exe
+C:\Exam\ServiceAuto\ServiceAuto\obj\Debug\ServiceAuto.pdb
