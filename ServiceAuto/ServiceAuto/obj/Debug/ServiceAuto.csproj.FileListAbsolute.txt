@@ -30,3 +30,4 @@ C:\Exam\ServiceAuto\ServiceAuto\obj\Debug\Views\Pages\ServicePage.baml
 C:\Exam\ServiceAuto\ServiceAuto\obj\Debug\Views\Windows\AddClientWindow.baml
 C:\Exam\ServiceAuto\ServiceAuto\obj\Debug\Views\Windows\AdminWindow.baml
 C:\Exam\ServiceAuto\ServiceAuto\obj\Debug\Views\Windows\EditServiceWindow.baml
+C:\Exam\ServiceAuto\ServiceAuto\obj\Debug\ServiceAuto.csprojAssemblyReference.cache
