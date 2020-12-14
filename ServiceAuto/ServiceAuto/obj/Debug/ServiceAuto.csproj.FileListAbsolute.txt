@@ -1,7 +1,6 @@
 C:\Exam\ServiceAuto\ServiceAuto\bin\Debug\ServiceAuto.exe.config
 C:\Exam\ServiceAuto\ServiceAuto\bin\Debug\ServiceAuto.exe
 C:\Exam\ServiceAuto\ServiceAuto\bin\Debug\ServiceAuto.pdb
-C:\Exam\ServiceAuto\ServiceAuto\obj\Debug\ServiceAuto.csprojAssemblyReference.cache
 C:\Exam\ServiceAuto\ServiceAuto\obj\Debug\Views\Windows\MainWindow.g.cs
 C:\Exam\ServiceAuto\ServiceAuto\obj\Debug\App.g.cs
 C:\Exam\ServiceAuto\ServiceAuto\obj\Debug\ServiceAuto_MarkupCompile.cache

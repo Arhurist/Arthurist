@@ -4,11 +4,84 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:ServiceAuto.Views.Pages"
+      xmlns:p="clr-namespace:ServiceAuto.Properties"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="ServicePage">
+      Title="ServicePage" Loaded="Page_Loaded">
 
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal">
+            <ComboBox Width="150" Name="SortBox" SelectionChanged="SortBox_SelectionChanged">
+                <ComboBoxItem>
+                    По возрастанию
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    По убыванию
+                </ComboBoxItem>
+            </ComboBox>
+            <ComboBox Width="150" Name="FilterBox" SelectionChanged="FilterBox_SelectionChanged">
+                <ComboBoxItem>Все</ComboBoxItem>
+                <ComboBoxItem>От 0 до 5%</ComboBoxItem>
+                <ComboBoxItem>От 5 до 15%</ComboBoxItem>
+                <ComboBoxItem>От 15 до 30%</ComboBoxItem>
+                <ComboBoxItem>От 30 до 70%</ComboBoxItem>
+                <ComboBoxItem>От 70 до 100%</ComboBoxItem>
+            </ComboBox>
+            <TextBox Width="450" Name="SearchBox" TextChanged="SearchBox_TextChanged"/>
+        </StackPanel>
+        <DataGrid Grid.Row="1"  Name="ServiceGrid" CanUserAddRows="False" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <!--Объявляем столбцы Columns-->
+                <DataGridTemplateColumn>
+                    <!--Пользовательский шаблон-->
+                    <DataGridTemplateColumn.CellTemplate>
+                        <!--Редактирование ячейки-->
+                        <DataTemplate>
+                            <!--Переправляем данные из БД по биндингу-->
+                            <StackPanel Orientation="Horizontal" Background="{Binding Color}">
+                                <!--Горизонтально-->
+                                <Image Width="50" Height="50" Source="{Binding Img}"/>
+                                <!--Загружаем картинку из БД-->
+                                <StackPanel>
+                                    <!--По умолчанию вертикальная ориентация-->
+                                    <TextBlock Text="{Binding Title}"/>
+                                    <!--Загружаем из БД Title-->
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Text=""/>
+                                        <TextBlock Text="{Binding Cost, StringFormat={}{0:#}}" TextDecorations="Strikethrough" Visibility="{Binding Visible}"/>
+                                        <TextBlock Text="{Binding Price}"/>
+                                        <TextBlock Text=" рублей за "/>
+                                        <TextBlock Text="{Binding DurationInMinutes}"/>
+                                        <TextBlock Text=" минут "/>
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Text=" * скидка "/>
+                                        <TextBlock Text="{Binding Discount}"/>
+                                        <TextBlock Text="%"/>
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal">
+                                        <StackPanel Orientation="Horizontal" Visibility="{Binding Source={x:Static p:Settings.Default},Path=IsAdmin}">
+                                            <Button Content="Редактировать" Click="EditButton_Click"/>
+                                            <Button Content="Удалить" Click="RemoveButton_Click"/>
+                                        </StackPanel>
+                                        <Button Content="Записаться" Click="RecButton_Click"/>
+                                    </StackPanel>
+                                </StackPanel>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <StackPanel Orientation="Horizontal" Grid.Row="2">
+            <TextBlock Grid.Row="2" Name="Recording"/>
+            <Button Content="Добавить услугу" Name ="AddButton"  Click="AddButton_Click"  Width="120" Visibility="{Binding Source={x:Static p:Settings.Default},Path=IsAdmin}"></Button>
+            <Button Content="Просмотр ближайших записей" Name ="ShowRecButton"  Click="ShowRecButton_Click"  Width="200" Visibility="{Binding Source={x:Static p:Settings.Default},Path=IsAdmin}"></Button>
+        </StackPanel>
     </Grid>
 </Page>

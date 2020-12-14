@@ -27,12 +27,19 @@ namespace ServiceAuto
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
-
+            MainFrame.GoBack(); /*Прописываем реакцию на нажатие кнопки "Назад"*/
         }
 
         private void MainFrame_ContentRendered(object sender, EventArgs e)
         {
-
+            if (MainFrame.CanGoBack)
+            {
+                BackButton.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                BackButton.Visibility = Visibility.Collapsed;
+            }
         }
     }
 }

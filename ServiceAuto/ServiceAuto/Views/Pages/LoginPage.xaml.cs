@@ -27,7 +27,7 @@ namespace ServiceAuto.Views.Pages
 
         private void EnterAdminButton_Click(object sender, RoutedEventArgs e)
         {
-            try
+            try /*Проверяем пароль, который вводит пользователь*/
             {
                 if (PassBox.Text == "0000")
                 {

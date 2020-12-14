@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ServiceAuto.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,6 +21,10 @@ namespace ServiceAuto.Views.Windows
     public partial class AddClientWindow : Window
     {
         public AddClientWindow()
+        {
+            InitializeComponent();
+        }
+        public AddClientWindow(Service item)
         {
             InitializeComponent();
         }
