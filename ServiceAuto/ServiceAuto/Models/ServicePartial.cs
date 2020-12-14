@@ -14,7 +14,7 @@ namespace ServiceAuto.Models
             {
                 if(Discount != 0)
                 {
-                    return "Green";
+                    return "#FF9C1A";
                 }
                 else
                 {

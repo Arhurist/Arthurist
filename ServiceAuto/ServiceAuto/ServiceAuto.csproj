@@ -98,9 +98,11 @@
     <Compile Include="Models\Client.cs">
       <DependentUpon>ModelServiseAuto.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\ClientPartial.cs" />
     <Compile Include="Models\ClientService.cs">
       <DependentUpon>ModelServiseAuto.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\ClientServisePartial.cs" />
     <Compile Include="Models\DocumentByService.cs">
       <DependentUpon>ModelServiseAuto.tt</DependentUpon>
     </Compile>
