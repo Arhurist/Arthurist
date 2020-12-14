@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Exam\ServiceAuto\ServiceAuto\App.xaml
-11895717287
+61978165299
 21358123766
-21-361908949
+261673172337
 18219088581
-Views\Windows\MainWindow.xaml;
+Views\Pages\LoginPage.xaml;Views\Pages\ServicePage.xaml;Views\Windows\AddClientWindow.xaml;Views\Windows\AdminWindow.xaml;Views\Windows\EditServiceWindow.xaml;Views\Windows\MainWindow.xaml;
 
-False
+True
 

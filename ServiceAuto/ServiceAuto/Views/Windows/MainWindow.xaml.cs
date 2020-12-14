@@ -24,5 +24,15 @@ namespace ServiceAuto
         {
             InitializeComponent();
         }
+
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MainFrame_ContentRendered(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -1,0 +1,33 @@
+﻿<Page x:Class="ServiceAuto.Views.Pages.LoginPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ServiceAuto.Views.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="LoginPage">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel Orientation="Horizontal">
+                <!-- Создаем первый элемент компоновки. Выравниваем дочерние элементы в одну линию по горизонтали-->
+                <TextBlock>     <!--Начало текстового блока, с помощью которого выводим надпись "Пароль"-->
+                    Пароль
+                </TextBlock>
+                <!--Конец текстового блока-->
+                <TextBox Name = "PassBox" Width="200" TextChanged="PassBox_TextChanged"/>
+                <!--Текстовый бокс, поле для ввода пароля, в том же StackPanel-->
+            </StackPanel>
+            <!--Закрываем первый элемент компоновки-->
+            <StackPanel Orientation="Horizontal">
+                <!-- Создаем второй элемент компоновки. Выравниваем дочерние элементы в одну линию по горизонтали-->
+                <Button Name="EnterAdminButton" Content="Администратор" Click="EnterAdminButton_Click"  Width="120" Margin="10"/>
+                <!--Создаем кнопку Администратор, которая будет реагировать на событие Click-->
+                <Button Name="EnterButton" Content="Пользователь" Click="EnterButton_Click"  Width="120" Margin="10"/>
+                <!--Создаем кнопку Пользователь, которая будет реагировать на событие Click-->
+            </StackPanel>
+            <!--Закрываем второй элемент компоновки-->
+        </StackPanel>
+    </Grid>
+</Page>
