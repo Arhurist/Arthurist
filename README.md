@@ -41,6 +41,6 @@
 
 
 <h3> Автор </h3>
-*Arthur Grigoryan*
+<b>Arthur Grigoryan</b><br>
 https://github.com/Batorsky/
 
